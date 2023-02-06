@@ -1,0 +1,83 @@
+/* TEXT AND BACKGROUND STYLES */
+html {
+    background-color: #000000;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 485px;
+    margin: 0 auto;
+}
+
+main {
+    background-color: #ffffff;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+figcaption, label, input, small {
+    font-size: 1em;
+}
+
+nav a {
+    font-size: 1.5em;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3em;
+    color: #007d7b;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    bottom: 32px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/* NAVIGATION */
+[href="#Top"] {
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    border: 2px solid white;
+    background-color: #000000;
+}
+
+nav h2 {
+    visibility:hidden;
+    height: 0px;
+}
+
+nav li {
+    display: inline-flex;
+    position: relative;
+    bottom: 51px;
+    right: 24px;
+}
+
+nav a {
+    padding: 4px;
+}
+
+/* LAYOUT */
+.container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+}
+
+main {
+    position: relative;
+    bottom: 30px;
+}

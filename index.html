@@ -1,16 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+    <header>
+        <h1>TK Photography</h1>
+        <nav> <!--content sectioning tag-->
+            <h2>Main Navigation</h2> <!--invisible--> 
+            <ul>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#Top">Top</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <h1>Welcome to My Website</h1>  
+        <section><!--content sectioning tag-->
+            <h2>About</h2>
+            <p>Hello!<br>I'm TK and I'm a photographer. I love looking at life through the lens of my camera. Landscape
+                photography is my speciality and it's taken me all over the world. </p>
+        </section>
+        <section><!--content sectioning tag-->
+            <h2>Gallery</h2>
+            <p>Here are some highlights of my work. The locations and year are in the caption.</p>
+            <figure>
+                <img src="Chile.png" alt="photo of Chile">
+                <figcaption>Chile, 2001</figcaption>
+            </figure>
+            <figure>
+                <img src="Guatemala.png" alt="photo of Guatemala">
+                <figcaption>Guatemala, 1997</figcaption>
+            </figure>
+            <figure>
+                <img src="Hawaii.png" alt="photo of Hawaii">
+                <figcaption>Hawaii, 2010</figcaption>
+            </figure>
+            <figure>
+                <img src="Iran.png" alt="photo of Iran">
+                <figcaption>Iran, 1999</figcaption>
+            </figure>
+            <figure>
+                <img src="Ireland.png" alt="photo of Ireland">
+                <figcaption>Ireland, 2012</figcaption>
+            </figure>
+            <figure>
+                <img src="Italy.png" alt="photo of Italy">
+                <figcaption>Italy, 2015</figcaption>
+            </figure>
+            <figure>
+                <img src="Moab-Desert.png" alt="photo of Moab-Desert.">
+                <figcaption>Moab Desert, 2020</figcaption>
+            </figure>
+            <figure>
+                <img src="Rocky-Mountains.png" alt="photo of Rocky-Mountains.">
+                <figcaption>Rocky Mountains, 2009</figcaption>
+            </figure>
+            <figure>
+                <img src="Switzerland.png" alt="photo of Switzerland.">
+                <figcaption>Switzerland, 2014</figcaption>
+            </figure>
+            <figure>
+                <img src="UK.png" alt="photo of UK.">
+                <figcaption>UK, 2005</figcaption>
+            </figure>
+            <figure>
+                <img src="USA.png" alt="photo of USA.">
+                <figcaption>USA, 2021</figcaption>
+            </figure>
+            <figure>
+                <img src="Wyoming.png" alt="photo of Wyoming.">
+                <figcaption>Wyoming, 2021</figcaption>
+            </figure>
+        </section>
     </main>
-  </body>
+    <section><!--content sectioning tag-->
+        <form>
+            <h2>Contact</h2>
+            <p>Please fill out this form and I'll connect with you soon.</p>
+            <section>
+                <h1>Your contact information</h1><!--make this heading invisible.-->
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your full name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email address" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <input type="message" id="message" placeholder="What can I help you with?" required>
+                </div>
+                <button type="submit">Submit</button>
+            </section>
+        </form>
+    </section>
+    <footer>
+        <p>Copyright 2021 TK Photography</p>
+    </footer>
+    </div>
+</body>
 </html>
