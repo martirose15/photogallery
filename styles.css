@@ -292,11 +292,4 @@ nav ul {
     justify-content: right;
 }
 
-[data-color="black"][data-position="top"] {
-    bottom: 205px;
-}
-
-[data-color="black"][data-position="top"][data-type="tall"] {
-    bottom: 457px;
-}
 } 
