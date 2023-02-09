@@ -36,51 +36,75 @@
                 <div class="imagecolumn">
                     <figure>
                         <img src="images/Chile.png" alt="photo of Chile">
-                        <figcaption>Chile, 2001</figcaption>
+                        <figcaption data-color="white" data-position="bottom">
+                            Chile, 2001
+                        </figcaption>
                     </figure>
                     <figure>
                         <img src="images/Guatemala.png" alt="photo of Guatemala">
-                        <figcaption>Guatemala, 1997</figcaption>
+                        <figcaption data-color="white" data-position="top">
+                            Guatemala, 1997
+                        </figcaption>
                     </figure>
                     <figure>
                         <img src="images/Hawaii.png" alt="photo of Hawaii">
-                        <figcaption>Hawaii, 2010</figcaption>
+                        <figcaption data-color="white" data-position="bottom">
+                            Hawaii, 2010
+                        </figcaption>
                     </figure>
                     <figure>
                         <img src="images/Iran.png" alt="photo of Iran">
-                        <figcaption>Iran, 1999</figcaption>
+                        <figcaption data-color="black" data-position="top" data-type="tall">
+                            Iran, 1999
+                        </figcaption>
                     </figure>
                     <figure>
                         <img src="images/Ireland.png" alt="photo of Ireland">
-                        <figcaption>Ireland, 2012</figcaption>
+                        <figcaption data-color="black" data-position="top" data-type="tall">
+                            Ireland, 2012
+                        </figcaption>
                     </figure>
                     <figure>
                         <img src="images/Italy.png" alt="photo of Italy">
-                        <figcaption>Italy, 2015</figcaption>
+                        <figcaption data-color="black" data-position="bottom" data-type="tall">
+                            Italy, 2015
+                        </figcaption>
                     </figure>
                     <figure>
                         <img src="images/Moab-Desert.png" alt="photo of Moab-Desert.">
-                        <figcaption>Moab Desert, 2020</figcaption>
+                        <figcaption data-color="white" data-position="bottom">
+                            Moab Desert, 2020
+                        </figcaption>
                     </figure>
                     <figure>
                         <img src="images/Rocky-Mountains.png" alt="photo of Rocky-Mountains.">
-                        <figcaption>Rocky Mountains, 2009</figcaption>
+                        <figcaption data-color="black" data-position="top">
+                            Rocky Mountains, 2009
+                        </figcaption>
                     </figure>
                     <figure>
                         <img src="images/Switzerland.png" alt="photo of Switzerland.">
-                        <figcaption>Switzerland, 2014</figcaption>
+                        <figcaption data-color="black" data-position="top">
+                            Switzerland, 2014
+                        </figcaption>
                     </figure>
                     <figure>
                         <img src="images/UK.png" alt="photo of UK.">
-                        <figcaption>UK, 2005</figcaption>
+                        <figcaption data-color="black" data-position="top">
+                            UK, 2005
+                        </figcaption>
                     </figure>
                     <figure>
                         <img src="images/USA.png" alt="photo of USA.">
-                        <figcaption>USA, 2021</figcaption>
+                        <figcaption data-color="black" data-position="top">
+                            USA, 2021
+                        </figcaption>
                     </figure>
                     <figure>
                         <img src="images/Wyoming.png" alt="photo of Wyoming.">
-                        <figcaption>Wyoming, 2021</figcaption>
+                        <figcaption data-color="white" data-position="top">
+                            Wyoming, 2021
+                        </figcaption>
                     </figure>
                 </div>
             </section>
@@ -90,7 +114,12 @@
                 <h2>Contact</h2>
                 <p>Please fill out this form and I'll connect with you soon.</p>
                 <section>
-                    <h1>Your contact information</h1><!--make this heading invisible.-->
+                    <h1>Your contact information</h1>
+                    <!--make this heading invisible.
+                    I'm aware of the warning for this tag when validating my code. I think this is correct here because of what I read in the textbook.
+                    " HTML5 introduced the ability for each sectioning container to have its own self-contained outline. That means it is not necessary to think about which level of heading tag you’re 
+                    at in terms of the entire document. You could just concentrate on the sectioning container you were currently working in. "
+                    -->
                     <div class="form">
                         <label for="name">Name</label>
                         <input type="text" id="name" placeholder="Your full name" required>
@@ -100,8 +129,8 @@
                         <input type="email" id="email" placeholder="Enter your email address" required>
                     </div>
                     <div class="form">
-                        <label for="message">Message</label>
-                        <input type="message" id="message" placeholder="What can I help you with?" required>
+                        <label for="text">Message</label>
+                        <input type="text" id="text" placeholder="What can I help you with?" required>
                     </div>
                     <button type="submit">Submit</button>
                 </section>

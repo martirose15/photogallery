@@ -68,6 +68,7 @@ nav ul {
     justify-content: center;
     position: relative;
     bottom: 60px;
+    list-style: none;
   }
 
 [href="#Top"] {
@@ -119,8 +120,29 @@ figcaption {
 }
 
 
-figcaption:nth-child(even) {
+[data-color="white"][data-position="bottom"] {
     color: #ffffff;
+    bottom: 35px;
+}
+
+[data-color="white"][data-position="top"] {
+    color: #ffffff;
+    bottom: 280px;
+}
+
+[data-color="black"][data-position="top"] {
+    color: #000000;
+    bottom: 280px;
+}
+
+[data-color="black"][data-position="top"][data-type="tall"] {
+    color: #000000;
+    bottom: 640px;
+}
+
+[data-color="black"][data-position="bottom"][data-type="tall"] {
+    color: #000000;
+    bottom: 30px;
 }
 
 form h1 {
@@ -154,11 +176,6 @@ button[type=submit] {
     text-transform: uppercase;
     font-weight: bold;
 }
-/* 
-[tests for the presence or absence of the type attribute]   
-submit is the value. More than one type attribute so need to make
-it specific for the button tag.
-*/
 
 form {
     position: relative;
@@ -178,7 +195,6 @@ footer {
 
 /***MEDIA QUERIES***/
 
-/* when viewport >= 880px, display css */
 @media screen and (min-width:880px) {
 body {
     width: 80%;
@@ -219,12 +235,12 @@ input[id=email] {
     top: 14px;  
 }
 
-label[for=message] {
+label[for=text] {
     position: relative;
     bottom: -24px;   
 }
 
-input[id=message] {
+input[id=text] {
     position: relative;
     top: 26px;
 }
@@ -233,6 +249,32 @@ button[type=submit] {
     top: 60px;
     left: 19%;
     padding: 10px 200px;
+}
+
+[data-color="white"][data-position="bottom"] {
+    bottom: 28px;
+    right: 40px;
+}
+
+[data-color="white"][data-position="top"] {
+    bottom: 25px;
+    right: 40px;
+}
+
+[data-color="black"][data-position="top"] {
+    bottom: 90%;
+    right: 40px;
+}
+
+[data-color="black"][data-position="top"][data-type="tall"] {
+    bottom: 95%;
+    right: 40px;
+}
+
+[data-color="black"][data-position="bottom"][data-type="tall"] {
+    color: #000000;
+    bottom: 30px;
+    right: 40px;
 }
 }
 
@@ -248,5 +290,13 @@ button[type=submit] {
 nav ul {
     display: flex;
     justify-content: right;
+}
+
+[data-color="black"][data-position="top"] {
+    bottom: 205px;
+}
+
+[data-color="black"][data-position="top"][data-type="tall"] {
+    bottom: 457px;
 }
 } 
